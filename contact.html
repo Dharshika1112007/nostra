@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra - Contact Us</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP OFFER BAR -->
+    <div class="offer-bar">
+        <p>🔥 SALE UP TO 50% OFF &nbsp; | &nbsp; LIMITED TIME OFFER</p>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">NOSTRA</a>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="collections.html">Collections</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="active">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </nav>
+
+
+    <!-- CONTACT HEADER -->
+    <section class="contact-header">
+
+        <div class="contact-header-content">
+
+            <p>WE'D LOVE TO HEAR FROM YOU</p>
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Have a question or need help?
+                Our team is here for you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <main class="contact-page">
+
+        <div class="contact-container">
+
+
+            <!-- CONTACT INFORMATION -->
+            <section class="contact-info">
+
+                <p class="contact-small">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's Talk
+                </h2>
+
+                <p class="contact-description">
+                    Whether you have a question about our products,
+                    your order, or anything else, feel free to
+                    contact us.
+                </p>
+
+
+                <!-- EMAIL -->
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>support@nostrafashion.com</p>
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+
+                </div>
+
+
+                <!-- WORKING HOURS -->
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        🕐
+                    </div>
+
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Saturday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT FORM -->
+            <section class="contact-form-section">
+
+                <h2>
+                    Send Us A Message
+                </h2>
+
+                <p>
+                    Fill out the form below and we'll get back
+                    to you as soon as possible.
+                </p>
+
+
+                <form
+                    id="contactForm"
+                    onsubmit="submitContactForm(event)">
+
+
+                    <!-- NAME -->
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="contactEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required>
+
+                    </div>
+
+
+                    <!-- SUBJECT -->
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is your message about?"
+                            required>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+                    <button
+                        type="submit"
+                        class="contact-submit">
+
+                        Send Message →
+
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+
+        <div class="section-title">
+
+            <p>NEED HELP?</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <div class="faq-card">
+
+                <h3>
+                    How long does delivery take?
+                </h3>
+
+                <p>
+                    Orders are usually delivered within
+                    3-7 working days.
+                </p>
+
+            </div>
+
+
+            <div class="faq-card">
+
+                <h3>
+                    Can I return my order?
+                </h3>
+
+                <p>
+                    Yes. We offer an easy return policy
+                    for eligible products.
+                </p>
+
+            </div>
+
+
+            <div class="faq-card">
+
+                <h3>
+                    How can I track my order?
+                </h3>
+
+                <p>
+                    You can contact our support team
+                    for order tracking assistance.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>
+                Join Our Newsletter
+            </h2>
+
+            <p>
+                Get updates about new collections,
+                offers and exclusive deals.
+            </p>
+
+            <form onsubmit="subscribeNewsletter(event)">
+
+                <input
+                    type="email"
+                    id="contactNewsletterEmail"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- ABOUT -->
+            <div class="footer-about">
+
+                <h2>NOSTRA</h2>
+
+                <p>
+                    Fashion that fits your personality.
+                    Discover stylish and affordable
+                    collections made for you.
+                </p>
+
+            </div>
+
+
+            <!-- LINKS -->
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="collections.html">
+                    Collections
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+            <div class="footer-links">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Twitter
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Nostra. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
